@@ -6,7 +6,7 @@ footer {
     text-align: center;
  }
 
- ul {
+ footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,27 +14,27 @@ footer {
    
   }
   
-  li {
+  footer li {
     display: inline;
     padding: 10px;
   }
 
-  li a{
+  footer li a{
       color: black;
   }
 
-  span.footer_span{
+  footer span.footer_span{
       color: lightgray;
 
   }
 
-  hr.footer_hr {
+  footer hr.footer_hr {
         border: 1px solid black;
         margin-right: 30px;
         margin-left: 30px;   
   }
 
-  p.copyright{
+  footer p.copyright{
       color: lightgray;
 
   }
