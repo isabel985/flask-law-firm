@@ -1,3 +1,44 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+
+ footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  
+  footer li {
+    display: inline;
+    padding: 10px;
+  }
+
+  footer li a{
+      color: black;
+  }
+
+  footer span.footer_span{
+      color: lightgray;
+
+  }
+
+  footer hr.footer_hr {
+        border: 1px solid black;
+        margin-right: 30px;
+        margin-left: 30px;   
+  }
+
+  footer p.copyright{
+      color: lightgray;
+
+  }
+
 body {
     background-image: url(images/nza_background.jpg);
 }
