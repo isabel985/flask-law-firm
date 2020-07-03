@@ -1,5 +1,4 @@
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -43,7 +42,51 @@ body {
     background-image: url(images/nza_background.jpg);
 }
 
-#team-sidebar {
+.content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#dkd    {
+    background-color: white;
+    text-align: center;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#index-image {
+    background-image:("./images/nza_slideshow.jpg");
+    background-size: cover;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-right: 2;
+}
+
+#index-dropbox {
+    overflow-y: scroll;
+    height: 360px;
+    text-align: left;
+    background-image: url(./images/nav_side_sub.jpg);
+    background-repeat: no-repeat;
+    color:white;
+    background-size: cover;
+}
+
+#index-bottom {
+    height: auto;
+    width: 70px;
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+}
+#index-contact {
+    text-align: left;
+    width: 100px;    
+    padding: 20px;
+}
+
+#main-sidebar {
     background-image: url(images/nav_side.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,14 +94,12 @@ body {
     color: white;
 }
 
-#team-sidebar a {
+#main-sidebar a {
     color: white;
     font-weight: bold;
 }
 
-#team-main {
-    padding-right: 30px;
-}
+
 
 #team-sidebar-image {
     width: 90%;
@@ -123,7 +164,219 @@ body {
     color: black;
 }
 
+ul.nav {
+    width:100%;
+    margin:0 auto;
+    margin-top: 25px;
+    padding:0;
+    list-style:none;
+    background-color:white;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif; 
+
+}
+.nav li { 
+    width:20%;
+    margin:0;
+    padding:0 15px;
+    border-top: 2px solid  black;
+    display: inline-block;
+    position: relative;
+
+    border-bottom: 2px solid  black; 
+}
+.nav li::after {
+    position: absolute;
+    width: 2px;
+    right: 0;
+    bottom: 10px;
+    content:' ';
+    height: 50%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.nav li:last-child::after {
+    width: 0;
+ } 
+
+.nav a {
+    text-align:center;
+    padding:8px 0 8px 0;
+    margin:0;
+    display:block;
+
+}
+.nav a:hover { 
+    background:rgb(153, 47, 14);
+
+}
+
+.login {
+    float: right;
+    font-size:small;
+    border-radius: 0px 0px 5px 5px;
+    background-color: lightgray;
+    color: black;
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.service-container {
+    padding: 50px;
+}
+
+.service-ul {
+    list-style-type: none;
+    text-justify: left;
+    font-size: large;
+    width:100%;
+    font-family: Helvetica, sans-serif, Arial;  
+ }
+
+ .service-ul > li {
+     width: 100%;
+ }
+
+ .service-sidebar {
+    background-image: url(images/nav_side.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.service-nice-line {
+        text-decoration-line: white;
+        border: 1px solid white;
+}
+.service-img {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+
+.extra-space {
+    margin: 0px;
+}
+
+#attorney-pic {
+    text-align:center;
+    width: 100%;
+
+}
+
+.about-pad-sidebar {
+    padding-left: 30px;
+    text-align: left;
+    background-color: rgb(122, 9, 9);
+    color: white;
+}
+
+
+.about-left {
+    margin-left: -35px;
+}
+
+#about-attorney {
+    text-align: center;
+    width: 230px;
+}
+
+#about-small{
+    font-size: small;
+    margin-top: -15px;
+    
+}
+
+#about-text {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#about-pics {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+#about-ps {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#about-pl {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#about-pb {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#about-pt {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#about-ph{
+    margin-right: 325px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
 
 .pad-sidebar {
     padding-left: 30px;
 }
+.location-sidebar{
+    background-image: url(images/nav_side.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 300px;
+    width: 220px; */
+    color: #fff;
+    padding:20px;
+    /* margin-top: 100px; */
+    font-size: 12px;
+}
+
+.location-container{
+    padding-bottom: 120px;
+    padding-top: 25px;
+}
+    
+    
+.location-text{
+    /* margin-top: 100px; */
+    font-size: 10pt;
+    padding-right: 50px;
+    margin-bottom: 115px;
+}
+
+.location-list-unstyled{
+    font-size: 9pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.location-titlesidebar{
+    border-bottom: 1px solid white; 
+    padding-bottom: 5px;
+}
+#location-content {
+    padding: 20px;
+}
+/* adding padding btwn United States and border*/
+.morespace h6{
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    border-bottom: 1.2px solid lightslategrey;
+}
+/* closing spacing in state list*/
+.location-list ul{
+    line-height: 15px;
+}
+    
+    
+
+
+    
+
+
+
