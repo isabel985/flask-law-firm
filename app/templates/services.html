@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="container service-container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="service-sidebar">
+                <!-- SIDEBAR STUFF HERE -->
+                <h6>WHAT WE DO</h6>
+                <div>
+                    <p>Subrogation</p>
+                    <ul class="service-ul">
+                        <li>Property</li>
+                        <li>Workers' Compensation</li>
+                    </ul>
+                    <p>Litgation</p>
+                    <ul class="service-ul">
+                        <li>Appellate</li>
+                        <li>Commerical</li>
+                        <li>Defense</li>
+                        <li>Labor/Employment</li>
+                    </ul>
+                    <p>Business</p>
+                    <ul class="service-ul">
+                        <li>Brokerage</li>
+                        <li>Agreement</li>
+                        <li>Business Formation</li>
+                        <li>Business Related</li>
+                        <li>Contracts</li>
+                        <li>Labor/Employment</li>
+                    </ul>
+                    <p>Transportation</p>
+                    <a href="{{ url_for('team') }}">
+                        <img id="attorney-pic" class="img-fluid service-img" src="{{ url_for('static', filename='./images/content-navlink-attorneys.jpg') }}"
+                        alt="Attorney">
+                        <b>Attorneys</b>
+                        <p>Meet our prestigious partners and esteemed associates.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- MAIN CONTENT HERE -->
+        <div class="col-md-9">
+            <div class="container services-main">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> 
+                            What we do at Bigshot Zoo & Adds PC is prevent our client's
+                            problems in some cases, solve their problems in other cases,
+                            and ultimately, if the problems cannot be prevented or solved,
+                            prepare to take the problems to trial and WIN. Our attorneys, who
+                            view themselves as problem solvers, have tried more cases to a
+                            jury or judge than most law firms collectively. Whether the
+                            problem is a lawsuit, business deal, or formation of a new
+                            business, we have the skill, experience, and business accumen
+                            to help our clients.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="{{ url_for('static', filename='./images/sub-02-subrogation.jpg') }}" alt="Subrogation">
+                        <img class="img-fluid" src="{{ url_for('static', filename='./images/sub-02-business.jpg') }}" alt="Business">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="{{ url_for('static', filename='./images/sub-02-litigation.jpg') }}" alt="Litigation">
+                        <img class="img-fluid" src="{{ url_for('static', filename='./images/sub-02-warehouse.jpg') }}" alt="Transportation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

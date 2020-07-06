@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="container index">
+
+    <div class="row">
+        <!-- image -->
+        <div class="col-md-9">
+            <img class="img-fluid" src="{{ url_for('static', filename='./images/nza_slideshow.jpg') }}" alt="foward thinking">
+        </div>
+
+        <!-- sidebar -->
+        <div class="col-md-3 index-sidebar overflow-auto">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                In vulputate sit amet tortor at consectetur. Morbi feugiat
+                justo ut commodo viverra. Maecenas non turpis turpis. Morbi faucibus
+                bibendum massa non gravida. Donec placerat purus metus, quis vehicula
+                leo gravida quis. Aenean at sagittis lorem. In a volutpat ipsum. Sed
+                volutpat vulputate varius. Nunc vel facilisis ligula, in efficitur quam.
+                Integer id eros condimentum, sodales lectus sit amet, sodales nisi. Etiam
+                fringilla, diam eu pharetra semper, erat neque gravida nisi, eu condimentum
+                mauris magna vitae risus. Donec quam lectus, lobortis quis tristique id,
+                tristique at quam. Cras iaculis imperdiet vestibulum. Nulla interdum nunc
+                ut tortor molestie, at tempus quam eleifend. Quisque commodo purus ut iaculis
+                tincidunt.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9">
+            <p>
+                <b>Welcome to our website!</b>
+            </p>
+            <p>
+                Bigshot, Zoo & Adds, PC is nationally recongnized and respected law firm that offers
+                its clients big firm experience and talent in a smaller firm environment. Our reputation
+                is very important to us. We solve our client;s problems in some situations and prevent
+                them all together in other situations. We welcome you to our website to learn more
+                about us.
+            </p>
+        </div>
+    
+        <div class="col-md-3 index-contact">
+            <p>
+                <b>Bigshot, Zoo & Adds, P.C.</b>
+                419 West South Street, Suite 4200<br> 
+                Houston, Texas 35983<br>
+                332-332-8800 phone <br>
+                332-332-7777 fax<br>
+                <a href="#"> me@izblaw.com </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

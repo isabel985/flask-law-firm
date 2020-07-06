@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="container about">
+    <div class="row">
+
+        <!-- SIDEBAR STUFF HERE -->
+        <div class="col-md-3">
+            <div class="service-sidebar">
+                {% include './partials/who-we-are-sidebar.html' %}
+                <a class="location" href="{{url_for('location') }}">
+                    <img src="{{ url_for('static', filename='./images/content-navlink-where.jpg') }}" alt="Where We Work">
+                    <p>
+                        <b>Where We Work</b><br>
+                        Find out more about our work coverage area.
+                    </p>
+                </a>
+            </div>
+        </div>
+
+            <!-- MAIN CONTENT HERE -->
+        <div class="col-md-9">
+            <p id="text">
+                Who we are? That is one of the most important 
+                questions a prospective client can ask us. Our answer - 
+                one of the most respected law firms in the country that
+                cares about your case, your business, and solving your 
+                problem. We invite you to get to know our attorneys better 
+                and understand the depth of experience and talent we have
+                in the links below.
+            </p>
+            <div class="row about-imgs">
+                <img class="col-md-6" src="https://via.placeholder.com/288X113" alt="Blank">
+                <img class="col-md-6" src="{{ url_for('static', filename='./images/sub-01-attorneys.jpg') }}" alt="Attorneys">
+                <img class="col-md-6" src="{{ url_for('static', filename='./images/sub-01-staff.jpg') }}" alt="Staff">
+                <img class="col-md-6" src="{{ url_for('static', filename='./images/sub-01-reputation.jpg') }}" alt="Reputation">
+                <img class="col-md-6" src="{{ url_for('static', filename='./images/sub-01-history.jpg') }}" alt="History">
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

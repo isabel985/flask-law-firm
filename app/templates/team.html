@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+	<div class="container bg-white">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="service-sidebar">
+					{% include './partials/who-we-are-sidebar.html' %}
+					<a href="{{ url_for('contact') }}" class="sidebar-contact-link">
+						<img id="team-sidebar-image" src="{{ url_for('static', filename='images/content-navlink-panek_rosemary.jpg') }}" alt="Worker">
+						<p>
+							<b>Contact Us</b><br>
+							For general inquires and questions...
+						</p>
+					</a>
+				</div>
+			</div>
+			<div id="team-main" class="col-md-9">
+				<div class="row">
+					<div class="col-md-12">
+						<img id="team-main-banner" class="img-fluid" src="{{ url_for('static', filename='images/content-01-attorneys.jpg') }}" alt="Attorneys">
+					</div>
+				</div>
+				<div id="team-bios" class="row">
+					{% for member in members %}
+						<div id="team-single-bio" class="col-md-6">
+							<img class="float-left team-bio-image" src="https://via.placeholder.com/110" alt="BioImage">
+							<p class="team-bio-details"><b>{{ member.name }}</b></p>
+							<p class="team-bio-details">{{ member.title }}</p>
+							<p class="team-bio-details team-bio-phone">{{ member.phone }}</p>
+							<p class="team-bio-email"><a href="#">{{ member.email }}</a></p>
+							<p class="team-bio-more"><a href="{{ member.bio }}">more...</a></p>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+{% endblock %}

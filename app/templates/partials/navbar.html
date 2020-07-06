@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="login">
+                <a href="{{ url_for('login') }}">LOGIN</a> | <a href="{{ url_for('register') }}">REGISTER</a>
+            </div>
+            <br>
+            <div class="col-md-6">
+                <a href="{{ url_for('index') }}">
+                    <img class="offset-md-1" src="https://placehold.it/318x76&Text=Random Image" alt=""
+                    style="width:318px;height:76px">
+                </a>
+            </div>
+            <br>
+            
+            <nav class="navbar navbar-expand-sm">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item"><a href="{{ url_for('about') }}">WHO WE ARE</a></li>
+                        <li class="nav-item"><a href="{{ url_for('services') }}">WHAT WE DO</a></li>
+                        <li class="nav-item"><a href="#">NEWS & EVENTS</a></li>
+                        <li class="nav-item"><a href="{{ url_for('location') }}">WHERE WE WORK</a></li>
+                        <li class="nav-item"><a href="{{ url_for('contact') }}">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
