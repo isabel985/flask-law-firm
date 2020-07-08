@@ -1,13 +1,13 @@
 from flask import Flask
-app = Flask(__name__, static_folder='static')
-
 from config import Config
-app.config.from_object(Config)
-
 from flask_sqlalchemy import SQLAlchemy
-db = SQLAlchemy(app)
-
 from flask_migrate import Migrate
+import logging, os
+from logging.handlers import SMTPHandler, RotatingFileHandler
+
+app = Flask(__name__, static_folder='static')
+db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+app.config.from_object(Config)
 
 from app import routes, models
